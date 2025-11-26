@@ -35,9 +35,8 @@ export default function Home() {
               <button className="rounded-2xl bg-indigo-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-indigo-500/40 transition hover:-translate-y-0.5 hover:bg-indigo-400">
                 View Docs
               </button>
-              <button className="rounded-2xl border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/10">
-                See Components
-              </button>
+              
+              
             </div>
           </div>
 
