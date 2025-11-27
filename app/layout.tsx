@@ -35,6 +35,9 @@ export default function RootLayout({
           <Link className="transition hover:text-indigo-500 dark:hover:text-indigo-300" href="/about">
             About
           </Link>
+          <Link className="transition hover:text-indigo-500 dark:hover:text-indigo-300" href="/contact">
+            Contact
+          </Link>
         </header>
         {children}
       </body>
