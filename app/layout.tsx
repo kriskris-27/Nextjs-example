@@ -28,18 +28,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="flex items-center gap-6 border-b border-black/5 bg-white/70 px-6 py-4 text-sm font-semibold text-slate-800 backdrop-blur dark:border-white/10 dark:bg-black/40 dark:text-slate-100">
-          <Link className="transition hover:text-indigo-500 dark:hover:text-indigo-300" href="/">
-            Home
-          </Link>
-          <Link className="transition hover:text-indigo-500 dark:hover:text-indigo-300" href="/about">
-            About
-          </Link>
-          <Link className="transition hover:text-indigo-500 dark:hover:text-indigo-300" href="/contact">
-            Contact
-          </Link>
-        </header>
-        {children}
+        <div className="flex min-h-screen flex-col">
+          <header className="flex items-center gap-6 border-b border-black/5 bg-white/70 px-6 py-4 text-sm font-semibold text-slate-800 backdrop-blur dark:border-white/10 dark:bg-black/40 dark:text-slate-100">
+            <Link className="transition hover:text-indigo-500 dark:hover:text-indigo-300" href="/">
+              Home
+            </Link>
+            <Link className="transition hover:text-indigo-500 dark:hover:text-indigo-300" href="/about">
+              About
+            </Link>
+            <Link className="transition hover:text-indigo-500 dark:hover:text-indigo-300" href="/contact">
+              Contact
+            </Link>
+          </header>
+          <main className="flex-1">{children}</main>
+          <footer className="border-t border-black/5 bg-white/70 px-6 py-4 text-xs text-slate-600 backdrop-blur dark:border-white/10 dark:bg-black/40 dark:text-slate-300">
+            Built with Next.js and Tailwind. Explore the pages: Home, About, Contact.
+          </footer>
+        </div>
       </body>
     </html>
   );
